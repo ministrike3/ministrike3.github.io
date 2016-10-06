@@ -409,7 +409,7 @@ footer {
     -ms-animation: show-info 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 500ms 1 normal forwards;
     -o-animation: show-info 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 500ms 1 normal forwards;
     animation: show-info 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 500ms 1 normal forwards;
-
+    width:auto;
     padding: 5px 15px 10px 20px;
 }
 
@@ -418,5 +418,4 @@ footer {
     text-transform: uppercase;
     margin-right: 10px;
     font-size: 10px;
-    width: 200px;
 }​
