@@ -1,246 +1,291 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Neil Patel · Home</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/20790-200.png">
-    <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
-    <script type="text/javascript" src="/js/WOW.js"></script>
-    <link rel="stylesheet" type="text/css" href="device-mockups/device-mockups2.min.css">
-    <script type="text/javascript">
-    new WOW().init();
-    </script>
-    <script type="text/javascript" src="/js/jQuery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <header class="zoom-me">
-        <img id="bgimg">
-        <div class="wow fadeIn" data-wow-duration="1s" style="width: 100%;height: 100%;background: rgba(0,0,0,0.7);position:absolute"></div>
-    </header>
-    <nav id="nav">
-        <div class="nav-wrapper black" style="padding-left: 50px;padding-right: 50px">
-            <a href="#!" class="brand-logo title">&amp;y</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-menu"></i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#workedwith">Organizations</a></li>
-                <li><a href="#news">Press</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://docs.google.com/document/d/13fn7lICKsP-CpcSf53zoin7AvZ3ed9AQ8yKqlEDTSlA/edit?usp=sharing">Resume</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-            </ul>
-        </div>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
     </nav>
-    <div id="hero" class="hero" style="height: 100%;background: url(img/bg.jpg);background-size:cover;background-position:center;background-attachment:fixed">
-        <div style="background: rgba(0,0,0,0.5);height: 100%;color: #FFF">
-            <div class="element">
-                <div class="container" align="center">
-                    <h1 class="title wow fadeInUp">Neil Patel</h1>
-                    <h3>Full-stack developer</h3>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Start Bootstrap</h1>
+            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
                 </div>
             </div>
+            <!-- /.row -->
         </div>
-    </div>
-    <main role="main" style="overflow:hidden;padding:0">
-        <div style="background: #1F1F21" id="projects">
-            <div class="contained container" style="color: #FFF;" align="left">
-                <br>
-                <div class="row" id="phoneholder" align="center">
-                    <div class="col m3" id="row">
-                    </div>
-                    <div class="col m3">
+        <!-- /.container -->
+    </section>
 
-                    </div>
-                    <div class="col m3">
-                    </div>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Our Services</h2>
+                    <hr class="small">
                     <div class="row">
-                        <div class="col s12 m7">
-                            <div class="card" style="background: #58A3E2">
-                                <div class="card-image" style="background: #58A3E2">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Golden_Gate_Bridge_0002.jpg">
-                                    <span class="card-title">ImagineBernie</span>
-                                </div>
-                                <div class="card-content" align="left" style="background: #58A3E2">
-                                    <p style="color: #FFF">Used <b>social media marketing</b> and a <b>MEAN stack</b> to co-found a grassroots campaign for Bernie Sanders and other left-wing democrat New Deal supporters. We endorsed Misty Snow</p>
-                                </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
-                        <div class="col s12 m5">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11692525_862733613806346_8054226891465219636_n.png?oh=ec42af8393e61fbc45c5fd5aeea5a7ec&oe=58859C99">
-                                    <span class="card-title black-text">EduCommit</span>
-                                </div>
-                                <div class="card-content" align="left">
-                                    <p>Worked on a prototype of a nonprofit that helps children around the world get an education through a social network that connects mentors and mentees.</p>
-                                </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
+                    <!-- /.row (nested) -->
                 </div>
-                <div style="color: #95a5a6" id="news">
-                    <div class="container" align="center">
-                        <h1 style="color: #000">As seen on...</h1>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.row (nested) -->
+                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
-                <!--<div class="row">
-                        <div class="col square s12 m4 wow animated fadeIn org" data-wow-offset="200">
-                            <div class="imgdesc2" style="width: 100%;height: 100%;background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_the_United_Nations_(1945-1947).svg/2000px-Flag_of_the_United_Nations_(1945-1947).svg.png');background-size:cover;background-position:center;position:relative"></div>
-                            <div style="height: 100%">
-                                <div class="hoverinfo animated fadeInUp" align="right">
-                                    <a href="#"><h3>United Nations</h3></a>
-                                    <h5>Built an artificial intelligence to detect mental health patients at risk of harming themselves or others. Pitched to Counter Terrorism Committee Executive Directorate twice.</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col square s12 m4 wow animated fadeIn org" data-wow-offset="200" data-wow-delay="100ms">
-                            <div class="imgdesc2" style="width: 100%;height: 100%;background: url(http://s3.amazonaws.com/hiphopdx-production/2016/02/hoodie-allen-happy-camper-620x620.jpg);background-size:cover;background-position:center"></div>
-                            <div style="height: 100%">
-                                <div class="hoverinfo animated fadeInUp">
-                                    <a href="#"><h3>Hoodie Allen</h3></a>
-                                    <h5>Aided in finding the optimal CDN to host the <i>Happy Camper</i> album accounting for huge traffic and demand.</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col square s12 m4 wow animated fadeIn org" data-wow-offset="200" data-wow-delay="200ms">
-                            <div class="imgdesc2" style="width: 100%;height: 100%;background: url(https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13092169_1561341917495132_1195561175139252490_n.png?oh=79a6f11bd5ab5146e30481a90c6ad9f3&oe=5875EFF3); background-size:cover;background-position:center"></div>
-                            <div style="height: 100%">
-                                <div class="hoverinfo animated fadeInUp" align="left">
-                                    <a href="#"><h3>ImagineBernie</h3></a>
-                                    <h5>CTO for a grassroots left-wing campaign. Helped grow to 6,000 likes and 200,000 Facebook post reach.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
             </div>
         </div>
-        </div>
-        <div class="jumbotron jumbotron-job" align="center" style="background: #2D2D2D;color: #FFF" id="contact">
-            <div class="container">
-                <h2 class="wow fadeInUp title upper">Get <span class="wow fadeInUp title upper" data-wow-delay="250ms">In</span> <span class="wow fadeInUp title upper" data-wow-delay="500ms">Touch</span></h2>
-                <hr class="wow zoomIn" data-wow-delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
-                <h5>Shoot me an email at <u><a style="color: #FFF" href="mailto:neil123@gmail.com">neil123@gmail.com</a></u> or use the form below!</h5>
-                <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="wow fadeIn" data-wow-delay="500ms">
-                    <ol role="list" class="ss-question-list" style="padding-left: 0">
-                        <input type="email" placeholder="Your Email *" name="entry.590052548" value="" class="ss-q-short" id="entry_590052548" dir="auto" aria-label="Name  " aria-required="true" required="" title="" style="width:50%">
-                        <br>
-                        <br>
-                        <textarea name="entry.350270304" rows="8" cols="0" class="ss-q-long" id="entry_350270304" dir="auto" aria-label="How may I help you?  " placeholder="How may I help you?  " aria-required="true" required="" style="width:50%;border: 0"></textarea>
-                        <br>
-                        <input type="hidden" name="draftResponse" value="[,,&quot;-358895960907417255&quot;]
-">
-                        <input type="hidden" name="pageHistory" value="0">
-                        <input type="hidden" name="fbzx" value="-358895960907417255">
-                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
-                </form>
-                <h1><a target="_blank"href="http://fb.com/hackgician"><i class="fa fa-facebook wow fadeInUp" data-wow-delay="500ms"></i></a> <a target="_blank"href="http://twitter.andykamath.com"><i class="fa fa-twitter wow fadeInUp" data-wow-delay="250ms"></i></a> <a target="_blank"href="http://andykamath.com/linkedin"><i class="fa fa-linkedin wow fadeInUp"></i></a> <a target="_blank"href="http://github.com/andykamath"><i class="fa fa-github wow fadeInUp"></i></a> <a target="_blank"href="http://youtube.com/MrCandonce"><i class="fa fa-youtube wow fadeInUp" data-wow-delay="250ms"></i></a> <a target="_blank"href="http://instagram.com/andykamath"><i class="fa fa-instagram wow fadeInUp" data-wow-delay="500ms"></i></a></h1>
-                <a target="_blank"href="https://docs.google.com/document/d/13fn7lICKsP-CpcSf53zoin7AvZ3ed9AQ8yKqlEDTSlA/edit?usp=sharing" style="color: #FFF"><h5>View my resume <i class="fa fa-angle-right"></i></h5></a>
-                <script>
-                ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                        p = 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + '://platform.twitter.com/widgets.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'twitter-wjs');
-                </script>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Start Bootstrap</strong>
+                    </h4>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
             </div>
         </div>
-    </main>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
     <script>
-    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        alert("You are viewing this on a mobile device. Check it out on a desktop or a laptop for optimal viewing pleasure :)")
-    }
-    $(".square").css('height', $(".square").width())
-        /*var ctx = document.getElementById("myChart");
-        var ctx = document.getElementById("myChart").getContext("2d");
-        var ctx = $("#myChart");
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["People", "Mountains", "Beaches", "Trees"],
-                datasets: [{
-                    label: 'Popularity Index',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });*/
-    $(".device").hover(function() {
-        $(this).find(".imgdesc").hide()
-        $(this).find(".hovertext").show();
-    }, function() {
-        $(this).find(".imgdesc").show()
-        $(this).find(".hovertext").hide();
-    })
-    $(".org").hover(function() {
-        $(this).find(".imgdesc2").hide()
-        $(this).find(".hoverinfo").show();
-    }, function() {
-        $(this).find(".imgdesc2").show()
-        $(this).find(".hoverinfo").hide();
-    })
-    $(".fa-repeat").css('font-size', .75 * $("#img").height())
-    $(".device-mockup").attr('data-wow-offset', $(".device-mockup").height() * .75)
-    $("#row").css('margin-left', $("#row").width() / 2)
-   /* $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        $(".zoom-me img").css({
-            width: (100 + scroll / 5) + "%",
-            top: -(scroll / 10) + "%",
-            //Blur suggestion from @janwagner: http://codepen.io/janwagner/ in comments
-            "-webkit-filter": "blur(" + (scroll / 200) + "px)",
-            filter: "blur(" + (scroll / 200) + "px)"
-        });
-    });*/
-    $("#hero").css('height', ($(window).height() - $("#nav").height()))
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
     $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
@@ -250,15 +295,55 @@
                     return false;
                 }
             }
-            this.toggleClass("active");
         });
     });
-    $(".button-collapse").sideNav();
-    /*new Vivus('logo', {
-        duration: 75,
-        file: '/img/logo.svg'
-    }, console.log('swag'))*/
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
     </script>
+
 </body>
 
 </html>
