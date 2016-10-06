@@ -301,7 +301,7 @@ footer {
     font-size: 12px;
     opacity: 0.8;
     color: #fff;
-    width: 240px;
+    width: 200px;
     left: 0px;
     top: 20px;
 }
@@ -355,7 +355,7 @@ footer {
 
     margin-bottom: 1px;
     background: rgba(0,0,0,0.8);
-    padding: 12px 15px 12px 200px;
+    padding: 12px 15px 12px 20px;
 }
 
 .info .about {
