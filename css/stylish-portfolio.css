@@ -148,10 +148,10 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
+/* Header
 
 .header {
-  /*  display: table;
+    display: table;
     position: relative;*/
   /*  width: 100%;
     height: 100%;
@@ -159,9 +159,9 @@ hr.small {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 }
-/*.JSswagger {
+.JSswagger {
   position: relative;
   width: 100%;
   height: 100%;
