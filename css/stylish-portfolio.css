@@ -395,13 +395,12 @@ footer {
     margin-top: 10px;
     font-size: 20px;
 }
-
-.info .about h3:before {
+/*.info .about h3:before {
 
     margin-right: 2px;
     font-size: 10px;
     content: '\203A';
-}
+}*/
 
 .info .more {
 
