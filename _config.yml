@@ -1,0 +1,59 @@
+# Site Info
+title: ministrike3 -- Alchemist
+tagline: 'Learning to be a code alchemist, one experiment at a time.'
+description: 'Turn Up'
+baseurl: "/lanyon"
+url: http://ministrike3.github.io
+logo: '/public/logo.png'
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Neil Patel
+  description: A passionate <strong>developer and researcher</strong>, learning to become an alchemist. <p> University of Illinois -- Graduating Winter 2018 </p>
+  gravatar: 73d0ec5a302492f6f5baa93d000825d0 # md5 hash of your email address
+  contact:
+    linkedin:  https://www.linkedin.com/in/neil123
+    github:    https://github.com/ministrike3
+    # facebook:  <hide>
+    twitter:   https://twitter.com/ministrike3
+    email:     mailto:neil123@gmail.com
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+
+# Puglins
+mathjax: true
+
+

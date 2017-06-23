@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>ministrike3 -- Alchemist</title>
+ <link href="http://localhost:4000/lanyon/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/lanyon/"/>
+ <updated>2017-06-23T14:07:43-07:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Neil Patel</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Introducing the new ministrike3.github.io</title>
+   <link href="http://localhost:4000/dev/2017/06/23/developingmysite/"/>
+   <updated>2017-06-23T00:00:00-07:00</updated>
+   <id>http://localhost:4000/lanyon/dev/2017/06/23/developingmysite</id>
+   <content type="html">&lt;h3 id=&quot;i-just-built-some-awesome-stuff&quot;&gt;I Just built some awesome stuff&lt;/h3&gt;
+
+&lt;p&gt;This site is built on the shoulders of several projects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll (Obviously)&lt;/li&gt;
+  &lt;li&gt;Poole, The Jekyll Butler&lt;/li&gt;
+  &lt;li&gt;Lanyon, the enhanced Poole&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-rest-of-my-blog-posts-from-2014-2017-should-be-imported-over-the-next-couple-of-weeks&quot;&gt;The Rest of my blog posts from 2014-2017 should be imported over the next couple of weeks!&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What's Jekyll?</title>
+   <link href="http://localhost:4000/2017/06/22/whats-jekyll/"/>
+   <updated>2017-06-22T00:00:00-07:00</updated>
+   <id>http://localhost:4000/lanyon/2017/06/22/whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is also the engine behind GitHub Pages, which is where I’m hosting my site. 
+Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cryptography Week 3: CPA-Secure Encryptions from PRF's</title>
+   <link href="http://localhost:4000/learning/2017/06/18/cryptoweek3cpasecure/"/>
+   <updated>2017-06-18T00:00:00-07:00</updated>
+   <id>http://localhost:4000/lanyon/learning/2017/06/18/cryptoweek3cpasecure</id>
+   <content type="html">&lt;h3 id=&quot;notes-on-block-ciphers&quot;&gt;Notes on block ciphers:&lt;/h3&gt;
+&lt;p&gt;For large enough n, random permutation is indistinguishable from random functions, therefore, block ciphers are good pseudo-random functions,
+Assuming you have a n-bit  key k that you put into a block cipher, you can encrypt a n-bit message m. This is the same as the One Time Pad; the benefit here is that because the block cipher is pseudo-random, you can encrypt multiple messages with the same key.
+&lt;strong&gt;**&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;currently-the-trouble-with-this-encryption-scheme-is-that-encrypting-an-n-bit-string-results-in-a-2n-bit-cipher-text&quot;&gt;Currently the trouble with this encryption scheme is that encrypting an n-bit string results in a 2n-bit cipher text:&lt;/h3&gt;
+
+&lt;p&gt;an n-bit R and n-bit key are plugged into the block cipher
+the pseudo-random output of the block cipher is XOR’d with m
+R &amp;amp; the output of the XOR are sent as the 2n-bit ciphertext
+&lt;strong&gt;***
+You can mitigate this in several ways; the first step is to break the message into many small blocks to allow for an arbitrary length of message.
+**&lt;/strong&gt;*&lt;/p&gt;
+&lt;h3 id=&quot;modes-of-operation&quot;&gt;Modes of Operation:&lt;/h3&gt;
+&lt;p&gt;Stream Ciphers (not covered in this course):
+Synchronized and Unsynchronized&lt;/p&gt;
+
+&lt;h4 id=&quot;block-ciphers&quot;&gt;Block ciphers:&lt;/h4&gt;
+
+&lt;p&gt;Counter Mode, or CTR:
+I have a bunch of n-bit blocks
+Define an n-bit number c0 (First block in cipher text)
+c0+i is used as input for pseudo-random, where i is the # of the block in the message
+so final message is original message+n bits long&lt;/p&gt;
+
+&lt;p&gt;Cipher Block Chaining, or CBC mode:
+Define an n-bit number c0(first block in cipher text)
+XOR with m1
+Xor c1 with m2 -&amp;gt; c2, c2 with m3 -&amp;gt;c3, and so on&lt;/p&gt;
+
+&lt;p&gt;Never use Electronic Code book, EBC mode:
+Was defined before true security notions were understood
+use m1 to encrypt m2 and so forth
+if two blocks are the same in a long plaintext, it won’t work because in long amounts there will be repeated ciphertext&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cryptography Week 3: Pseudorandom Functions and Block Ciphers</title>
+   <link href="http://localhost:4000/learning/2017/06/17/cryptoweek3pseudo/"/>
+   <updated>2017-06-17T00:00:00-07:00</updated>
+   <id>http://localhost:4000/lanyon/learning/2017/06/17/cryptoweek3pseudo</id>
+   <content type="html">&lt;p&gt;F is a pseudorandom function if Fk, for a uniform key k which is an element {0,1}^n, is indistinguishable from a uniform function Func_n.&lt;/p&gt;
+
+&lt;p&gt;Let F be a length preserving, keyed function:&lt;/p&gt;
+
+&lt;p&gt;F is a keyed permutation iff:
+F_k is a bijection for every k
+F_k^-1 is efficiently computable&lt;/p&gt;
+
+&lt;p&gt;F is a psuedorandom permutation if F_k, for a uniform key which is an element {0,1}^n, is indistinguishable from a uniform permutation.&lt;/p&gt;
+
+&lt;h3 id=&quot;block-cipher-practical-construction-of-pseudorandom-permutation&quot;&gt;Block Cipher: Practical Construction of pseudorandom permutation&lt;/h3&gt;
+
+&lt;p&gt;No asypmptotic, and hard to distinguish f_k from a uniform f element perm even for attackers running in time = 2^n&lt;/p&gt;
+
+&lt;p&gt;AES is a standardized block cipher
+block length: 128 bit
+key length: 128,192, and 256 bit (2^x security so even a key length of 128 is fine)&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
