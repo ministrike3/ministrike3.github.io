@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing the new ministrike3.github.io
-tag: web
+tag: Web
 category: Dev
 ---
 ### I Just built some awesome stuff
