@@ -2,7 +2,7 @@
 layout: post
 title: Introducing the new ministrike3.github.io
 tag: Web
-category: Dev
+category: Web
 ---
 ## I just rebuilt my personal website
 
@@ -21,4 +21,4 @@ This site is built on the shoulders of several projects:
 * Poole, The Jekyll Butler
 * Lanyon, the enhanced Poole
 
-## The Rest of my blog posts from 2014-2017 should be imported over the next couple of weeks!
+## The rest of my blog posts from 2014-2017 should be imported over the next couple of weeks!

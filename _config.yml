@@ -43,6 +43,8 @@ nav:
     - { Tags: '/blog/tags/' }
   About:
     - '/about/'
+#  To-do List:
+#    - '/todo/'
 
 
 # Where are tags and categories displayed
