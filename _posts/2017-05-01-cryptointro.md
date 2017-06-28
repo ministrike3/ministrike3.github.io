@@ -44,6 +44,3 @@ Cryptographic definitions have 2 parts:
 3)Choose plain, get ciphertext, often with ability to decrypt certain chosen ciphertexts
 
 An encryption scheme is secure iff regardless of any prior knowledge the attacker has of the plaintext, the ciphertext observed by the attacker should leak no additional information about the plaintext
-
-
-

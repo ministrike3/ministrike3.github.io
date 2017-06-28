@@ -2,7 +2,7 @@
 layout: post
 title: "Python: What are *args and **kwargs?"
 tag: [Python]
-category: [Python,Learning] 
+category: [Python] 
 ---
 ### *args is something you pass into a function when it might be a variable number of inputs:
 

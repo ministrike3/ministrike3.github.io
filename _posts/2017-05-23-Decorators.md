@@ -2,7 +2,7 @@
 layout: post
 title: "Python: What is a Decorator? "
 tag: [Python]
-category: [Python,Learning] 
+category: [Python] 
 ---
 I was working on some python stuff when I stumbled upon the term decorator; not knowing what it was, a quick google search led to a relatively confusing explanation of what I believe to be a simple idea.
 
