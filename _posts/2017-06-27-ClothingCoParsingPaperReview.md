@@ -5,7 +5,9 @@ tag: [Computer Vision, Research Paper]
 category: [Computer Vision]
 ---
 
-Today at work, I was doing some research for my project when someone on the team [shared this paper] (https://arxiv.org/pdf/1502.00739.pdf) with me and asked me to read and understand it. It's so far above my current understanding and skillset that I decided to write a blog post about it to help me understand what exactly I was learning. 
+Today at work, I was doing some research for my project when someone on the team 
+[shared this paper](https://arxiv.org/pdf/1502.00739.pdf) 
+with me and asked me to read and understand it. It's so far above my current understanding and skillset that I decided to write a blog post about it to help me understand what exactly I was learning. 
 
 ****
 
